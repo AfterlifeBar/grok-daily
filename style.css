@@ -1,8 +1,20 @@
-:root{--bg:#0e0f12;--card:#17191e;--fg:#e8e6e1;--mute:#9a978f;--acc:#f2b84b;--line:#2a2d33}
+:root{
+  color-scheme:light dark;
+  --bg:#0e0f12;--card:#17191e;--fg:#e8e6e1;--prose:#d4d1ca;--mute:#9a978f;
+  --acc:#f2b84b;--acc-fill:#f2b84b;--on-acc:#141414;--line:#2a2d33;
+  --img-shadow:0 0 0 0 transparent
+}
+@media (prefers-color-scheme:light){
+  :root{
+    --bg:#f3eee4;--card:#fffaf3;--fg:#1c1915;--prose:#2c2822;--mute:#645e54;
+    --acc:#8a5310;--acc-fill:#f2b84b;--on-acc:#1a1408;--line:#e3d9cb;
+    --img-shadow:0 1px 3px rgba(48,36,16,.14),0 0 0 1px rgba(48,36,16,.10)
+  }
+}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.7 -apple-system,"PingFang SC","Noto Sans SC",sans-serif}
 main{max-width:680px;margin:0 auto;padding:16px 16px 48px}
-img{max-width:100%;height:auto;border-radius:10px;display:block}
+img{max-width:100%;height:auto;border-radius:10px;display:block;box-shadow:var(--img-shadow)}
 a{color:var(--acc);text-decoration:none;word-break:break-all}
 header.mast{text-align:center;padding:8px 0 16px;border-bottom:1px solid var(--line)}
 .mast h1{font-family:Georgia,serif;letter-spacing:.12em;margin:.2em 0;font-size:30px}
@@ -11,9 +23,9 @@ header.mast{text-align:center;padding:8px 0 16px;border-bottom:1px solid var(--l
 section{margin-top:28px}section>h2{font-size:15px;color:var(--acc);letter-spacing:.1em;border-left:3px solid var(--acc);padding-left:8px}
 article{background:var(--card);border-radius:12px;padding:14px 16px;margin:12px 0}
 article h3{margin:0 0 6px;font-size:17px}article .no{color:var(--acc);margin-right:6px}
-article p{margin:0 0 8px;color:#d4d1ca}article .src{font-size:14px}
+article p{margin:0 0 8px;color:var(--prose)}article .src{font-size:14px}
 ul.issues{list-style:none;padding:0}ul.issues li{border-bottom:1px solid var(--line);padding:12px 0}
 footer{color:var(--mute);font-size:13px;text-align:center;margin-top:40px}
 a.shot{display:block;margin:12px 0}
 .kicker{margin:14px 0 0;font-size:16px;line-height:1.55}
-.top{display:inline-block;background:var(--acc);color:#141414;font-size:12px;font-weight:700;padding:0 8px;border-radius:999px;margin:0 0 8px}
+.top{display:inline-block;background:var(--acc-fill);color:var(--on-acc);font-size:12px;font-weight:700;padding:0 8px;border-radius:999px;margin:0 0 8px}
