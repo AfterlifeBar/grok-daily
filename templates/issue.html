@@ -1,17 +1,39 @@
 <!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
-<title>GROK DAILY · {{DATE}}</title><meta property="og:title" content="GROK DAILY · {{DATE}}">
-<meta property="og:image" content="{{COVER_URL}}"><link rel="stylesheet" href="style.css"></head>
+<title>GROK EXTRA · {{DATE}}</title><meta property="og:title" content="GROK EXTRA · {{DATE}}">
+<meta property="og:image" content="{{COVER_URL}}"><link rel="stylesheet" href="../style.css"></head>
 <body><main>
-<header class="mast"><div class="date">{{DATE}} · {{WEEKDAY}}</div><h1>GROK DAILY</h1></header>
-<div class="cover"><img src="img/{{DATE}}/cover.jpg" alt="封面" loading="eager"></div>
+<!-- 封面已含报头，不要再放 header.mast -->
+<div class="cover"><a class="shot" href="../img/{{DATE}}/cover.jpg" title="查看大图"><img src="../img/{{DATE}}/cover.jpg" alt="封面" loading="eager"></a></div>
+<p class="meta">GROK EXTRA · 第 {{N}} 期 · {{DATE}}</p>
+<p class="kicker">{{头条}}</p>
+
 <section><h2>{{SECTION_NAME}}</h2>
-<article><h3><span class="no">01</span>{{加粗结论}}</h3><p>{{两三句正文}}</p>
-<!-- 可选配图: <img src="img/{{DATE}}/01.jpg" loading="lazy"> -->
+<!-- 占位图不要放。实拍/信息图做成 3:1 条：<a class="shot" href="../img/{{DATE}}/01.jpg"><img src="../img/{{DATE}}/01.jpg" alt="" loading="lazy"></a> -->
+<article>
+<span class="top">今日最重要</span>
+<h3><span class="no">01</span>{{加粗结论}}</h3>
+<p>{{两三句正文}}</p>
+<div class="src"><a href="{{URL}}">{{来源名称}} →</a></div>
+</article>
+</section>
+<section class="deep"><h2>深度阅读</h2>
+<article><h3>{{深度标题}}</h3><p>{{核心论点}}</p>
 <div class="src"><a href="{{URL}}">{{来源名称}} →</a></div></article>
 </section>
-<section><h2>深度阅读</h2><!-- 同 article 结构 --></section>
-<section><h2>值得盯</h2><!-- 同 article 结构 --></section>
-<footer><a href="index.html">← 往期</a></footer>
+<section class="tips"><h2><span class="mark">Tips</span>Grok Bot 玩法</h2>
+<article>
+<span class="top">可直接装</span>
+<h3><span class="no">01</span>{{玩法结论}}</h3>
+<p>{{两三句}}</p>
+<div class="src"><a href="{{URL}}">{{来源名称}} →</a></div>
+</article>
+</section>
+<section class="watch"><h2>值得盯</h2>
+<ul class="checks">
+<li>{{一件事}}</li>
+</ul>
+</section>
+<footer><a href="../index.html">← 往期</a></footer>
 </main></body></html>
