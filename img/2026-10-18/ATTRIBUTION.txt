@@ -1,0 +1,9 @@
+Section images (Unsplash, free license for editorial use):
+01.jpg - semiconductor/circuit board (Unsplash photo-1518770660439)
+02.jpg - stock charts (Unsplash photo-1611974789855)
+03.jpg - server room (Unsplash photo-1558494949)
+04.jpg - coding screen (Unsplash photo-1461749280684)
+05.jpg - AI abstract (Unsplash photo-1677442136019)
+06.jpg - books/reading (Unsplash)
+07.jpg - laptop desk (Unsplash photo-1498050108023)
+Cover: NOT generated here — parent GenerateImage.
