@@ -1,0 +1,9 @@
+Section images:
+01.jpg - markets/charts (Unsplash photo-1611974789855)
+02.jpg - semiconductor (Unsplash photo-1518770660439); SED HBM photo attempted as alt
+03.jpg - server room (Unsplash photo-1558494949)
+04.jpg - AI abstract (Unsplash photo-1677442136019)
+05.jpg - coding screen (Unsplash photo-1461749280684)
+06.jpg - books/reading (Unsplash photo-1481627834876)
+07.jpg - laptop desk (Unsplash photo-1498050108023)
+Cover: NOT generated here — parent GenerateImage.
